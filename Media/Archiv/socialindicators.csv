@@ -1,0 +1,44 @@
+Indicator,Explanation
+e1,Do you know to read and write?
+e6a,Highest degree of education?
+o1,"Last week, did you work at least one hour (not considering household related work)?"
+o12,What type of work to you perform?
+o16,What kind of employment contract do you have?
+o25a_min,What is your usual commuting time?
+o25c,What kind of transport do you normally use?
+o28,Do participate in any pension system?
+y21a,"Do you receive the subsidy ""Chile Solidario""?"
+y22a,"Last month, did you receive the subsidy ""Bono de protección?"""
+y24,Subsidies to access drinking water?
+y27a,What kind of bank account do you have? 
+ysub,How many subsidies do you receive in total?
+ytot,Total income
+s12,What kind of health insurance system do you have?
+s13,"From 1 to 7, how would you assess your health status?"
+s14,Does any member of your family have access to a health insurance system?
+s26a,How many health checks did you have in the last three months?
+s27a,Have you been to the hospital?
+s28,"During the last 12 months, have you received medical treatment? "
+s31a1,Do you have one of the following permanent conditions?
+s32c,Degree of difficulty to move inside your home? 
+s33g1,Degree of difficulty to go outside?
+s33i1,Degree of difficulty to do household related work? 
+s33j1,Degree of difficulty to receive or make calls? 
+r1a,What is your nationality?
+r3,Do you consider yourself part of an indigenous group?
+r7c,Do you have access to a vehicle if necessary?
+r8a,Have you been afraid of not having enough money to buy food in general? 
+r8b,Have you been afraid of not having enough money to buy healthy food?
+r16a,Do you have a working boiler in your home? 
+r16b,Do you have a phone in your home? 
+v33,How many family cores are living in this home? 
+v37a,Distance to a public transport service: Less than 1 km? 
+v37c,"Distance from a health center: Less than 2,5 km?"
+v37i,"Distance from a pharmacy: Less than 2,5 km?"
+v39b,How often do you notice bad smell or bad air quality in your neighborhood?
+pobreza,Situation of poverty by income
+hh_d_prevs,Home without access to a health insurance system
+hh_d_cot,Home without access to a social security system
+hh_d_servbas,Home without access to basic necessities
+qaut,National quintile
+numper,Number of persons in household
