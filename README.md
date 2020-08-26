@@ -1,4 +1,4 @@
-# How do social indicators drive the spread of Covid-19 in Chile?
+# Covid-19 in Chile: Predict new cases and new fatalities per day with data about mobility and socioeconomic background
 
 
 ## Index
@@ -17,37 +17,39 @@
 
 ## <a class="anchor" id = "about">About the project</a>
 
-In this notebook and the corresponding Medium blogpost, I analyzed the correlation between social indicators (such as poverty, distance from next pharmacy, income, etc.) and the number of confirmed Covid-19 cases and fatalities in Chile. 
+In this notebook and the corresponding Medium blogpost, I analyzed the correlation between social indicators (such as poverty, distance from next pharmacy, income, etc.), Google mobility data and the number of confirmed Covid-19 cases and fatalities in Chile. 
+
+After understanding the correlation, I built a Machine Learning model to predict the new cases per day for cases and fatalities caused by Covid-19 in Chile. 
 
 Combining information from different data sources, I tried to find answers to the following questions: 
-1. How is the situation in Chile compared to other countries worldwide?
-2. How is the situation within Chile, comparing the different regions and districts?
-3. Which correlation does exist between Covid-19 cases and fatalities in the most and less affected Chilean districts? 
-4. How does a regression model trained on social indicators perform?
+1. How is the situation within Chile and what differences are there in the different regions? 
+2. How did mobility in the country change? 
+3. Which correlation does exist between the socioeconomic indicators and the mobility data with the Covid-19 numbers? 
+4. How does a Machine Learning model perform with socioeconomic and mobility data perform? 
 
 
 ## <a class="anchor" id="related-projects">Related projects</a>
 
 * [Covid-19 Chile Dashboard](http://covid-chile-dashboard.herokuapp.com/)([GitHub repository](https://github.com/muellermax/Covid-19-Chile-Dashboard))
-* [Social Vulnerability and Covid-19 in the United States](https://medium.com/@muellermax1985/how-does-covid-19-affect-social-vulnerable-populations-in-the-us-11b1d9109876)([GitHub repository](https://github.com/muellermax/Covid-19-USA-social-vulnerability))
+* [Medium article: How do social indicators drive the spread of Covid-19 in Chile?](https://medium.com/@muellermax1985/how-do-social-indicators-drive-the-spread-of-covid-19-in-chile-86b0affb0442) 
+* [Medium article: Social Vulnerability and Covid-19 in the United States](https://medium.com/@muellermax1985/how-does-covid-19-affect-social-vulnerable-populations-in-the-us-11b1d9109876)([GitHub repository](https://github.com/muellermax/Covid-19-USA-social-vulnerability))
 
 
 ## <a class = "anchor" id="installation">Installation</a>
 
-You simply fork or copy the code, the notebook includes links to all data sources *minus one*: The socioeconomic CASEN indicators for the Chilean districts (see below) have to be downloaded seperately. 
+You simply fork or copy the code, the notebook includes directly reads in the Covid-19 data from its sources. The CASEN socioeconomic data has to be download separately (see below), as well as the Google mobility data (see below). 
 
-A part from this, the notebook runs on Python 3.7 and includes the libraries pandas, numpy, matplotlib, seaborn and sklearn.
+Apart from this, the notebook runs on Python 3.7 and includes the libraries pandas, numpy, matplotlib, seaborn and sklearn.
 
 ## <a class="anchor" id = "data">Data</a>
 
 This repository has been made with the help of many very important and helpful data sources: 
 
 * The [Chilean Ministry of Social Development](http://www.desarrollosocialyfamilia.gob.cl/)provides a database with a wide range of socioeconomic indicators (Caracterización Socioeconómica Nacional, CASEN). You can download the [compressed file here](http://observatorio.ministeriodesarrollosocial.gob.cl/casen-multidimensional/casen/basedatos.php), I relied on the STATA data (unpacked, its about 630 MB); you will have to download it - I did not upload it to my repository. 
-* For data about Covid-19 in Chile, the [Chilean Ministry of Science, Technology, Knowledge and Innovation](https://www.gob.cl/ministerios/ministerio-de-ciencia-tecnologia-conocimiento-e-innovacion/) and the [Chilean Data Observatory](http://dataobservatory.net/) provides [on GitHub more than 50 data products](https://github.com/MinCiencia/Datos-COVID19), including daily updated information about Covid-19 confirmed cases and fatalities in Chilean regions and districts. I included data about the Covid-19 cases per region ([data product 3](https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto3)), Covid-19 fatalities per region ([data product 14](https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto14)), Covid-19 cases per district ([data product 1](https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto1)) and Covid-19 fatalities per district ([data product 38](https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto38))
-* To compare the situation in Chile to other countries, I relied on the data of the [Center for Systems Science and Engineering (CSSE) at John Hopkins University and their Covid-19 GitHub repository](https://github.com/CSSEGISandData/COVID-19).
-* Finally I used [WorldBank population data](https://data.worldbank.org/indicator/SP.POP.TOTL) to calculate the cases per 100,000 habitants.
+* For data about Covid-19 in Chile, the [Chilean Ministry of Science, Technology, Knowledge and Innovation](https://www.gob.cl/ministerios/ministerio-de-ciencia-tecnologia-conocimiento-e-innovacion/) and the [Chilean Data Observatory](http://dataobservatory.net/) provides [on GitHub more than 50 data products](https://github.com/MinCiencia/Datos-COVID19), including daily updated information about Covid-19 confirmed cases and fatalities in Chilean regions and districts. I included data about the Covid-19 cases per region ([data product 3](https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto3)) and Covid-19 fatalities per region ([data product 14](https://github.com/MinCiencia/Datos-COVID19/tree/master/output/producto14)).
+* Finally, [Google provides quite interesting mobility reports for a lot of countries](https://www.google.com/covid19/mobility/). Here you can download the Global Mobility Report as CSV which includes the data for Chile and the Chilean regions. 
 
-Please not that all the data sources (WorldBank data not) are updated daily, which is way my findings and plots in the Medium blogpost may differ from when you are running the notebook. 
+Please not that the data about cases and fatalities is updated daily.
 
 
 ## <a class="anchor" id="about-casen">About the Chilean socioeconomic indicators CASEN</a>
