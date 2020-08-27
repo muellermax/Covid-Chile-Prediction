@@ -8,6 +8,9 @@
 3. [Installation](#installation)
 4. [Data](#data)
 5. [About the Chilean socioeconomic indicators CASEN](#about-casen)
+6. [About the Google mobility data](#about-mobility)
+
+
 6. [Findings/Medium article](#findings)
 7. [File descriptions](#file-description)
 8. [How to interact](#interact)
@@ -58,14 +61,25 @@ The CASEN database includes answers from more than 216.000 individuals from all 
 
 The CASEN study is realized every two years, e.g. to track the percentage of families that are still living in poverty.
 
+
+## <a class="anchor" id="about-mobility">About the Google mobility data</a>
+
+As Google writes on the [mobility homepage](https://www.google.com/covid19/mobility/): 
+
+> As global communities respond to COVID-19, we've heard from public health officials that the same type of aggregated, anonymized insights we use in products such as Google Maps could be helpful as they make critical decisions to combat COVID-19.
+
+> These Community Mobility Reports aim to provide insights into what has changed in response to policies aimed at combating COVID-19. The reports chart movement trends over time by geography, across different categories of places such as retail and recreation, groceries and pharmacies, parks, transit stations, workplaces, and residential.
+
+The Google mobility data show the change in percentage from a baseline (before Covid-19) in the amount of visitors in different categories, just like parks, retail, work etc. Only the "residential" category is different: It is measured in duration rather than visitors. 
+
+
 ## <a class="anchor" id="findings">Findings</a>
 
-You can find my analysis and my findings in the [Medium blogpost](https://medium.com/@muellermax1985/how-do-social-indicators-drive-the-spread-of-covid-19-in-chile-86b0affb0442). 
+You can find my analysis and my findings in the [Medium blogpost](). 
 
 
 ## <a class="anchor" id="file-description">File description</a>
-* Chile Capstone.ipynb: The jupyter notebook that includes all the code. 
-* API_SP.POP.TOTL_DS2_en_csv_v2_1217749.csv: A csv with the World Bank population data
+* Covid Chile Prediction.ipynb: The jupyter notebook that includes all the code. 
 * Libro_de_Codigos_Casen_2017.pdf: A PDF that explains all indicators that appear in the CASEN database (Spanish)
 * Media: A directory that includes the data (pictures and data) for the Medium blogpost
 
@@ -76,10 +90,12 @@ Every contribution is welcome. In the Medium blogpost, I have written some ideas
 
 ## <a class="anchor" id="thx">Acknowledgements</a>
 
-Thanks to the [Chilean Ministry of Science, Technology, Knowledge and Innovation](https://www.gob.cl/ministerios/ministerio-de-ciencia-tecnologia-conocimiento-e-innovacion/) and the [Chilean Data Observatory](http://dataobservatory.net/) for providing daily updated data about Covid-19 on their [GitHub](https://github.com/MinCiencia/Datos-COVID19). Also thanks to the [Center for Systems Science and Engineering (CSSE) at John Hopkins University](https://github.com/CSSEGISandData/COVID-19).
+Thanks to the [Chilean Ministry of Science, Technology, Knowledge and Innovation](https://www.gob.cl/ministerios/ministerio-de-ciencia-tecnologia-conocimiento-e-innovacion/) and the [Chilean Data Observatory](http://dataobservatory.net/) for providing daily updated data about Covid-19 on their [GitHub](https://github.com/MinCiencia/Datos-COVID19). 
 Furthermore the socio-economic CASEN data, provided by the [Chilean Ministry of Social Development](http://www.desarrollosocialyfamilia.gob.cl/) was very useful and enabled me to make this investigation. I also relied on [WorldBank population data](https://data.worldbank.org/indicator/SP.POP.TOTL).
-Also thanks to [Juan Manuel Núñez Méndez](https://unsplash.com/@juanmanunez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) who provided the foto for my Medium blogpost and the project on GitHub. 
-Finally, I would like to thank Udacity, Codecademy and Stackoverflow for allways providing answers to my questions.
+Thanks to Google for providing the [mobility reports](https://www.google.com/covid19/mobility/). 
+I also read a lot of articles about time series prediction and would like to especially thank Varshita Sher, her article about ["Time Series Modeling using Scikit, Pandas, and Numpy"](https://towardsdatascience.com/time-series-modeling-using-scikit-pandas-and-numpy-682e3b8db8d1) was quite useful to get an understanding of time series prediction. Also a lot of my evaluation code (RMSE or the model selection etc.) was inspired by her code. 
+Also very interesting was Mario Filhos description about ["How To Predict Multiple Time Series At Once With Scikit-Learn"](https://www.mariofilho.com/how-to-predict-multiple-time-series-with-scikit-learn-with-sales-forecasting-example/) which helped me to understand the concept of multiple time series prediction. 
+
 
 
 ## <a class="anchor" id="author">Author</a>
