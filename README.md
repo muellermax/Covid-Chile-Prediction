@@ -1,5 +1,4 @@
-# Covid-19 in Chile: Predict new cases and new fatalities per day with data about mobility and socioeconomic background
-
+# Prediction of Covid-19 in Chile with mobility data and socioeconomic background
 
 ## Index
 
