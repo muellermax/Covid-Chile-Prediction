@@ -74,7 +74,7 @@ The Google mobility data show the change in percentage from a baseline (before C
 
 ## <a class="anchor" id="findings">Findings</a>
 
-You can find my analysis and my findings in the [Medium blogpost](). 
+You can find my analysis and my findings in the [Medium blogpost](https://medium.com/@muellermax1985/prediction-of-covid-19-in-chile-with-mobility-data-and-socioeconomic-background-d2672dcb330a). 
 
 
 ## <a class="anchor" id="file-description">File description</a>
